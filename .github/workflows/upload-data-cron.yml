@@ -1,5 +1,5 @@
 
-name: Upload Data on Cron
+name: Upload Data - Cron
 
 # on:
 #  schedule:
