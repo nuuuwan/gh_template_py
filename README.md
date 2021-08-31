@@ -4,3 +4,4 @@
 
 ### 1.0.0 (PRE-RELEASE)
   * Basic changes
+  * Lint
