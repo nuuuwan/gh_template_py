@@ -3,11 +3,11 @@
 import setuptools
 
 DIST_NAME = 'gh_template_py'
-version = '1.0.0'
+VERSION = '1.0.0'
 
 setuptools.setup(
     name='%s-nuuuwan' % DIST_NAME,
-    version=version,
+    version=VERSION,
     author='Nuwan I. Senaratna',
     author_email='nuuuwan@gmail.com',
     description='',
@@ -29,7 +29,7 @@ setuptools.setup(
         'bs4',
         'pytest',
         'selenium',
-        'tweepy',
+        'tweepy==3.10.0',
         'utils-nuuuwan',
     ],
 )

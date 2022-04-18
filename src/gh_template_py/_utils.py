@@ -1,6 +1,5 @@
 """Utils."""
 
-import logging
+from utils import logx
 
-logging.basicConfig(level=logging.INFO)
-log = logging.getLogger('gh_template_py')
+log = logx.get_logger('')

@@ -1,7 +1,11 @@
 
-name: Upload Data - Manual
+name: Pipeline (Cron)
 
+# on:
+#  schedule:
+#    - cron:  "0 11 * * *"
 on: workflow_dispatch
+
 
 jobs:
   upload-data:
@@ -27,7 +31,7 @@ jobs:
     - name: Run - Upload Data
       run: |
         export PYTHONPATH="$PYTHONPATH:./src"
-        python src/gh_template_py/upload_data.py
+        python src/gh_template_py/pipeline.py
 
     - name: Checkout repo branch data
       uses: actions/checkout@v2
